@@ -63,9 +63,11 @@ Disk Group Creation
 	Select From List By Value	 level	 raid5
 	#Xpath Should Match 3 Times | //*[@class='widgetContainer disk2U24HPActive diskWidget'] | 1
 	#Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
-	: FOR    ${INDEX}    IN RANGE    1    3
+	: FOR    ${INDEX}    IN RANGE    1    4
     \    Log    ${INDEX}
 	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
+	Click Element    class=buttonLarge buttonHoriz buttonPrimary
+	Click Element    id=adp_ok
 	
 Capture Screenshot
     ${file1} =	Capture Page Screenshot
