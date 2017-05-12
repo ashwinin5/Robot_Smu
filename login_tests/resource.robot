@@ -66,7 +66,7 @@ Disk Group Creation
 	: FOR    ${INDEX}    IN RANGE    1    4
     \    Log    ${INDEX}
 	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
-	Click Element    class=buttonLarge buttonHoriz buttonPrimary
+	Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
 	Click Element    id=adp_ok
 	
 Capture Screenshot
