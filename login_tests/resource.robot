@@ -72,6 +72,3 @@ Capture Screenshot
     File Should Exist	${OUTPUTDIR}${/}selenium-screenshot-1.png
     Should Be Equal	${file1}	${OUTPUTDIR}${/}selenium-screenshot-1.png
 
-
-
-
