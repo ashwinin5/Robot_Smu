@@ -67,14 +67,11 @@ Disk Group Creation
     \    Log    ${INDEX}
 	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
 	Set Selenium Speed    4
-	Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
+	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
+	Set Selenium Speed    4
 	Click Element    id=adp_ok
 	
 Capture Screenshot
     ${file1} =	Capture Page Screenshot
     File Should Exist	${OUTPUTDIR}${/}selenium-screenshot-1.png
     Should Be Equal	${file1}	${OUTPUTDIR}${/}selenium-screenshot-1.png
-
-
-
-
