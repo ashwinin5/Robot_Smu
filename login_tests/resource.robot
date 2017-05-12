@@ -59,7 +59,7 @@ Disk Group Creation
 	Click Element	css=div.topicAction.buttonPrimary
 	Click Element	 MPoolsTopicIaddDiskGroup
 	Click Element	 xpath=//*[@id='type']/ul/li[1]/input
-	Input Text	 name	 dgA02
+	Input Text	 name	 dgA04
 	Select From List By Value	 level	 raid5
 	#Xpath Should Match 3 Times | //*[@class='widgetContainer disk2U24HPActive diskWidget'] | 1
 	#Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
