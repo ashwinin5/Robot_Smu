@@ -77,3 +77,6 @@ Capture Screenshot
     Should Be Equal	${file1}	${OUTPUTDIR}${/}selenium-screenshot-1.png
 
 
+
+
+
