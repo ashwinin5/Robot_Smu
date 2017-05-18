@@ -11,10 +11,11 @@ Valid Login
     Input Username    manage
     Input Password    !manage
     Submit Credentials
+	
     #Welcome Page Should Be Open
 	#Host tab id
 	#Initiator Creation
-	Disk Group Creation
+	#Disk Group Creation
 	[Teardown]    Close Browser
 
 

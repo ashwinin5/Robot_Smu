@@ -76,7 +76,11 @@ Capture Screenshot
     File Should Exist	${OUTPUTDIR}${/}selenium-screenshot-1.png
     Should Be Equal	${file1}	${OUTPUTDIR}${/}selenium-screenshot-1.png
 
-
-
-
-
+Delete Vdisk
+    #Get Element Attribute    xpath=//*[@id='tPoolsPools']/tbody
+	size    Get Element Size    xpath=//*[@id='tPoolsPools']/tbody
+	
+	${elem} =
+	: FOR    ${INDEX}    IN RANGE    1    4
+    \    Log    ${INDEX}
+	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
