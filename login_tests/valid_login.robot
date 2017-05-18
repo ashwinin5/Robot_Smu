@@ -11,8 +11,7 @@ Valid Login
     Input Username    manage
     Input Password    !manage
     Submit Credentials
-	
-    #Welcome Page Should Be Open
+	#Welcome Page Should Be Open
 	#Host tab id
 	#Initiator Creation
 	#Disk Group Creation
