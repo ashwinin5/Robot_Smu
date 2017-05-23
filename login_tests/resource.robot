@@ -54,10 +54,10 @@ Initiator Creation
 	Click Element	 adp_ok
 
 Disk Group Creation
-	Click Element	 MtopicsIpools
+	Click Element	 id=MtopicsIpools
 	#Set Selenium Speed    8
 	Click Element	css=div.topicAction.buttonPrimary
-	Click Element	 MPoolsTopicIaddDiskGroup
+	Click Element	 id=MPoolsTopicIaddDiskGroup
 	Click Element	 xpath=//*[@id='type']/ul/li[1]/input
 	Input Text	 name	 dgA04
 	Select From List By Value	 level	 raid5
