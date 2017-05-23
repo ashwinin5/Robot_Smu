@@ -39,7 +39,7 @@ Submit Credentials
 Welcome Page Should Be Open
     Title Should Be    10.1.25.102 [A] (GL200-Primary)
 
-Host tab id
+Navigating to Host tab
 	Click Element	 MtopicsIhosts
 	
 Initiator Creation
@@ -70,6 +70,20 @@ Disk Group Creation
 	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
 	Set Selenium Speed    4
 	Click Element    id=adp_ok
+
+Create Volume
+    Click Element    MtopicsIvolumes
+	Set Selenium Speed    5
+	Click Element    css=div.topicAction.buttonPrimary
+	Click Element    id=MVolumesTopicIcreateVirtualVolumes
+	Input Text    xpath=//*[@id='cvaTable']/tbody/tr/td[1]    Vol01
+	Input Text    xpath=//*[@id='cvaTable']/tbody/tr/td[2]    100GB
+	Input Text    xpath=//*[@id='cvaTable']/tbody/tr/td[3]    4
+	Input Text    xpath=//*[@id='cvaTable']/tbody/tr/td[5]    A
+	Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
+	
+
+
 	
 Capture Screenshot
     ${file1} =	Capture Page Screenshot
