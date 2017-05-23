@@ -68,11 +68,11 @@ Disk Group Creation
 	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
 	Set Selenium Speed    4
 	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
-	Set Selenium Speed    4
+	Set Selenium Speed    6
 	Click Element    id=adp_ok
 
 Create Volume
-    Click Element    MtopicsIvolumes
+    Click Element    id=MtopicsIvolumes
 	Set Selenium Speed    5
 	Click Element    css=div.topicAction.buttonPrimary
 	Click Element    id=MVolumesTopicIcreateVirtualVolumes
