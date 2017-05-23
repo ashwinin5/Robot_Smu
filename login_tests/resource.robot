@@ -98,3 +98,8 @@ Delete Vdisk
 	: FOR    ${INDEX}    IN RANGE    1    4
     \    Log    ${INDEX}
 	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
+
+
+
+
+
