@@ -7,7 +7,7 @@ Documentation     A resource file with reusable keywords and variables.
 Library           Selenium2Library
 
 *** Variables ***
-${SERVER}         10.1.25.133/v3/index.html
+${SERVER}         10.1.25.134
 ${BROWSER}        Firefox
 ${DELAY}          5
 ${VALID USER}     manage
@@ -18,7 +18,7 @@ ${OUTPUTDIR}      Screenshots
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    http://10.1.25.133/v3/index.html    ${BROWSER}
+    Open Browser    http://10.1.25.134    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
 
