@@ -6,19 +6,22 @@ Documentation     A resource file with reusable keywords and variables.
 ...               by the imported Selenium2Library.
 Library           Selenium2Library
 
+
 *** Variables ***
-${SERVER}         10.1.25.134
+${SERVER}         10.1.25.105
 ${BROWSER}        Firefox
 ${DELAY}          5
 ${VALID USER}     manage
 ${VALID PASSWORD}    !manage
 ${LOGIN URL}      http://${SERVER}/ 
 ${OUTPUTDIR}      Screenshots
+${INTEGER}        1
+
 
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    http://10.1.25.134    ${BROWSER}
+    Open Browser    http://10.1.25.105    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
 
@@ -36,9 +39,6 @@ Input Password
 Submit Credentials
     Click Element    loginButton
 	
-Welcome Page Should Be Open
-    Title Should Be    10.1.25.102 [A] (GL200-Primary)
-
 Navigating to Host tab
 	Click Element	 MtopicsIhosts
 	
@@ -100,7 +100,23 @@ Delete Vdisk
 	\    Click Element	 xpath=//*[@class='widgetContainer disk2U24HPActive diskWidget']
 
 
-
+Upgrade Firmware
+    Click Element    css=div.bannerEditButton
+	Set Selenium Speed    2
+	Click Element    id=MSysInfoBarPanelIupdateFirmware
+	Set Selenium Speed    2
+	Input Text    id=uCtrlFile    C:\Users\Administrator\Desktop\Firmwares\GL220P009-10-HP.bin
+	Set Selenium Speed    2
+	#Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
+	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
+	: FOR    ${INDEX}    IN RANGE    1    ${INTEGER}
+    \    Log    ${INDEX}
+	\    Reload Page
+	\    ${present}=  Run Keyword And Return Status    Element Should Be Visible   id=username
+	\	 Run Keyword If    ${present}    id=username
+	\    Exit For Loop If    '${present}'=='PASS'
+	\    ${INTEGER} = ${INDEX} + 1
+	
 
 
 
