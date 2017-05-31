@@ -8,7 +8,7 @@ Library           Selenium2Library
 
 
 *** Variables ***
-${SERVER}         10.1.25.133
+${SERVER}         10.1.25.134
 ${BROWSER}        Firefox
 ${DELAY}          5
 ${VALID USER}     manage
@@ -21,7 +21,7 @@ ${INDEX}        1
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    http://10.1.25.133    ${BROWSER}
+    Open Browser    http://10.1.25.134    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    8
 
@@ -81,8 +81,6 @@ Create Volume
 	Input Text    xpath=//*[@id='cvaTable']/tbody/tr/td[3]    4
 	Input Text    xpath=//*[@id='cvaTable']/tbody/tr/td[5]    A
 	Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
-	
-
 
 	
 Capture Screenshot
