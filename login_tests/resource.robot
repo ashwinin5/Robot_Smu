@@ -30,14 +30,15 @@ Go To Login Page
 
 Input Username
     [Arguments]    ${username}
-    Input Text    username    ${username}
+	Set Selenium Speed    4
+    Input Text    id=username    ${username}
 
 Input Password
     [Arguments]    ${password}
-    Input Text    password    ${password}
+    Input Text    id=password    ${password}
 
 Submit Credentials
-    Click Element    loginButton
+    Click Element    id=loginButton
 	
 Navigating to Host tab
 	Click Element	 MtopicsIhosts
