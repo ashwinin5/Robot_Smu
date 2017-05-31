@@ -8,7 +8,7 @@ Library           Selenium2Library
 
 
 *** Variables ***
-${SERVER}         10.1.25.134
+${SERVER}         10.1.25.133
 ${BROWSER}        Firefox
 ${DELAY}          5
 ${VALID USER}     manage
@@ -21,7 +21,7 @@ ${INDEX}        1
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    http://10.1.25.134    ${BROWSER}
+    Open Browser    http://10.1.25.133    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    8
 
@@ -111,6 +111,9 @@ Upgrade Firmware
 	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
 	#Set Selenium Speed    1200
 	${orig wait} =	Set Selenium Implicit Wait	1200 seconds
+	Set Selenium Speed    5
+	${ok_button}=  Run Keyword And Return Status    Element Should Be Visible   id=adp_ok
+	Run Keyword If    ${ok_button}    Click Element    id=adp_ok
 	Element Should Be Visible    id=username
 	Set Selenium Implicit Wait	${orig wait}
 	Reload Page
