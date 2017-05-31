@@ -111,9 +111,9 @@ Upgrade Firmware
 	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
 	#Set Selenium Speed    1200
 	${orig wait} =	Set Selenium Implicit Wait	1200 seconds
-	Reload Page
-    Element Should Be Visible    id=username
+	Element Should Be Visible    id=username
 	Set Selenium Implicit Wait	${orig wait}
+	Reload Page
 	
 
 
