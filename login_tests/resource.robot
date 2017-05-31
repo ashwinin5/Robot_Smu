@@ -8,7 +8,7 @@ Library           Selenium2Library
 
 
 *** Variables ***
-${SERVER}         10.1.25.133
+${SERVER}         10.1.25.134
 ${BROWSER}        Firefox
 ${DELAY}          5
 ${VALID USER}     manage
@@ -21,7 +21,7 @@ ${INDEX}        1
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    http://10.1.25.133    ${BROWSER}
+    Open Browser    http://10.1.25.134    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    8
 
@@ -105,7 +105,7 @@ Upgrade Firmware
 	Set Selenium Speed    2
 	Click Element    id=MSysInfoBarPanelIupdateFirmware
 	Set Selenium Speed    2
-	Input Text    id=uCtrlFile    C:\\Users\\Administrator\\Desktop\\Firmwares\\GL220P009-10-HP.bin
+	Input Text    id=uCtrlFile    C:\\Users\\Administrator\\Desktop\\Firmwares\\GL220P009-04.bin
 	Set Selenium Speed    2
 	#Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
 	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
