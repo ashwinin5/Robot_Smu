@@ -104,7 +104,7 @@ Upgrade Firmware
 	Set Selenium Speed    2
 	Click Element    id=MSysInfoBarPanelIupdateFirmware
 	Set Selenium Speed    2
-	Input Text    id=uCtrlFile    C:\\Users\\Administrator\\Desktop\\Firmwares\\GL220P009-04.bin
+	Input Text    id=uCtrlFile    C:\\Users\\Administrator\\Desktop\\Firmwares\\GL220P009-10-HP.bin
 	Set Selenium Speed    2
 	#Click Element    css=div.buttonLarge.buttonHoriz.buttonPrimary
 	Click Element    xpath=//*[@id='actionDialog']/div/div[2]/div/div/div[1]
