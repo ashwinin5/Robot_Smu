@@ -11,11 +11,11 @@ Valid Login
     Input Username    manage
     Input Password    !manage
     Submit Credentials
-    Upgrade Firmware
-    Input Username    manage
-    Input Password    !manage
-    Submit Credentials
-    Navigating to Host tab
-    Initiator Creation
-    Disk Group Creation
+    #Upgrade Firmware
+    #Input Username    manage
+    #Input Password    !manage
+    #Submit Credentials
+    #Navigating to Host tab
+    #Initiator Creation
+    #Disk Group Creation
 	[Teardown]    Close Browser
